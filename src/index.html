@@ -46,7 +46,7 @@
     }
 	</style>
 
-  <script>
+  <!--script>
      if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js')
         .then(function(registration) {
@@ -72,12 +72,43 @@
     } else {
       console.log('Service worker is not supported');
     }
-  </script>
+  </script-->
+  <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "ClothingStore",
+  "name": "Eshkin Cat",
+  "image": "http://eshkincat.com/assets/catlogo.jpg",
+  "@id": "http://eshkincat.com/#store",
+  "url": "http://eshkincat.com",
+  "telephone": "89787909031",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ул.Генерала Хрюкина",
+    "addressLocality": "Севастополь",
+    "postalCode": "99055",
+    "addressCountry": "UA"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "opens": "10:00",
+    "closes": "19:00"
+  },
+  "sameAs": "https://vk.com/e___cat"
+}
+</script>
 </head>
 
 <body>
-	<sk-app unresolved name="Eshkin Cat">
-    <div class="Loader">Загружаемся, мяу...</div>
+  <sk-app unresolved name="Eshkin Cat">
+    <div class="Loader"><img src="/assets/catlogo.jpg" alt=""></div>
   </sk-app>
 
   <script src="./vendor/custom-elements-es5-adapter.js" async nomodule></script>

@@ -1,41 +1,56 @@
 <header class="Header">
-  <img class="Logo" src="/assets/logo.svg" alt="EshkinCat" draggable="false">
-
+  <img class="Logo" src="/assets/catlogo.png" itemprop="image" alt="EshkinCat" draggable="false">
+  <app
   <sk-menu>
     <sk-menu-item>
-      <a class="MenuLink" href="">О нас</a>
+      <a class="MenuLink" href="/o-nas">О нас</a>
     </sk-menu-item>
-
     <sk-menu-item>
-      <a class="MenuLink" href="">Портфолио</a>
+      <a class="MenuLink" href="/portfolio">Портфолио</a>
     </sk-menu-item>
-
     <sk-menu-item>
-      <a class="MenuLink" href="/">Мастер классы</a>
+      <a class="MenuLink" href="/master-class">Мастер классы</a>
     </sk-menu-item>
-
     <sk-menu-item>
-      <a class="MenuLink" href="/">Как мы работаем</a>
+      <a class="MenuLink" href="/rabota">Как мы работаем</a>
     </sk-menu-item>
-
     <sk-menu-item>
-      <a class="MenuLink" href="/">Блог</a>
+      <a class="MenuLink" href="/blog">Блог</a>
     </sk-menu-item>
   </sk-menu>
 </header>
-
-
 <section class="Welcome">
-  <h1 class="Title">Добро пожаловать на EshkinCat</h1>
+  <h2>Добро пожаловать на</h2>
+  <h1 class="Title" itemprop="name">EshkinCat</h1>
   <p>
-    ДИЗАЙН и ПОШИВ ДЕТСКОЙ ОДЕЖДЫ
-    м.т. 8 97 87 90 90 31
+      Дизайн и пошив детской одежды
+      <br>
+      телефон: <span itemprop="telephone">89787909031</span> email: <span itemprop="email">di_cat@bk.ru</span><br>
+      <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+           <span itemprop="streetAddress"></span> <span itemprop="addressLocality">г.Севастополь</span><br>
+           <span itemprop="addressRegion">АР Крым</span> <span itemprop="postalCode">99055</span>
+      </span>
   </p>
+  <h5>Часы работы:</h5>
+  <p>
+      <meta property="openingHours" content="Mo,Tu,We,Th,Fr 10:00-19:00">
+      <span itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+        <span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek">
+          <span itemprop="name">Пнд.-Вс.</span>
+        </span>
+        <time property="opens" datetime="10:00">10:00</time>  -
+        <time property="closes" datetime="19:00">19:00</time>
+      </span>
+  </p>
+<img src="/assets/miau.jpeg" alt="">
+<meta itemprop="url" content="http://eshincat.com/">
+<span itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+  <meta itemprop="ratingValue" content="5">
+  <meta itemprop="bestRating" content="5">
+  <meta itemprop="worstRating" content="5">
+  <meta itemprop="ratingCount" content="1">
+</span>
 </section>
-
-
 <aside class="Meta">
   v[[appVersion]] - ENV: [[ENV]]
 </aside>
-
-
